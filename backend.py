@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 
 @app.route('/')
+
 @app.route('/index.html')
 def index():
     return render_template('index.html', the_title='Tiger Home Page')
-
 
 @app.route('/symbol.html')
 def symbol():
